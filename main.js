@@ -74,7 +74,7 @@ teamData.forEach((team, index) => {
                         ${team.allRounders.map(player => `
                             <li class="player">
                                 <span class="playerName">${player.playerName}</span>
-                                <span class="playerPrice">${player.playerPrice} Rs</span>
+                                <span class="playerPrice">${player.playerPrice}</span>
                             </li>
                         `).join('')}
                     </ul>
