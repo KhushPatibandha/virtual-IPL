@@ -3,12 +3,12 @@ const teamData = [
         teamName: "Team 1",
         teamFunds: "10000000 Rs",
         batsmen: [
-            { playerName: "Dhoni", playerPrice: "242424242 Rs" },
-            { playerName: "Virat", playerPrice: "3141441 Rs" },
+            { playerName: "Dhoni", playerPrice: "10000000 Rs" },
+            { playerName: "Virat", playerPrice: "41444 Rs" },
             { playerName: "", playerPrice: "" }
         ],
         bowlers: [
-            { playerName: "bumrah", playerPrice: "1414141 Rs" },
+            { playerName: "bumrah", playerPrice: "141 Rs" },
             { playerName: "", playerPrice: "" },
             { playerName: "", playerPrice: "" }
         ],
