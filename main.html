@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual IPL</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #intro-image {
+            background-image: url('assets/intro-bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #navbar a.navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            font-family: 'Space Mono', monospace;
+            text-decoration: none; /* Remove the default underline */
+            color: #fff; /* Set the initial color to white */
+        }
+
+        #navbar a.navbar-brand img {
+            width: 40px; /* Increase the logo size */
+            height: auto;
+            margin-right: 5px;
+        }
+
+        #navbar a.navbar-brand span {
+            font-size: 28px;
+        }
+
+        #navbar a.navbar-brand:hover {
+            color: #fff; /* Change the color to white on hover */
+        }
+
+        #tagline {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px; /* Increase the font size */
+            text-align: center;
+            color: #fff;
+            font-family: 'Space Mono', monospace; /* Add the font family */
+        }
+
+        .team-group {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+
+        @media (max-width: 768px) {
+            .team-container {
+                width: 100%; /* Set the width to 100% for mobile devices */
+                margin-right: 0; /* Remove the right margin for mobile devices */
+                margin-bottom: 20px; /* Add bottom margin for spacing */
+            }
+        }
+
+
+        .team-container:not(:last-child) {
+            margin-right: 20px; /* Add right margin for spacing */
+        }
+
+        .team-container h2,
+        .team-container h3 {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .team-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .team-container li {
+            margin-bottom: 10px;
+        }
+
+        .teamName {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .teamFunds {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 16px;
+        }
+
+        .playerName {
+            font-weight: bold;
+        }
+
+        .playerPrice {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="intro-image">
+        <div id="navbar">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://www.instagram.com/_pratyagra_/">
+                        <img src="assets/pratyagraLogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Pratyagra
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <h1 id="tagline">Your dream team, no longer a dream!</h1>
+    </div>
+
+    <div class="team-group">
+        <div class="team-container">
+            <div class="teamInfo" id="team-1">
+                <div class="teamName" id="team1Name">
+                    <h2>Team 1</h2>
+                    <div class="teamFunds" id="team1Fund">
+                        <h2>999999 Rs</h2>
+                    </div>
+                </div>
+                <div class="Players">
+                    <div class="batsman" id="team1Batsman">
+                        <h3>Batsman</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Virat</span>
+                                <span class="playerPrice">100000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Dhoni</span>
+                                <span class="playerPrice">80000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Rohit</span>
+                                <span class="playerPrice">75000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bowlers" id="team1Bowlers">
+                        <h3>Bowlers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Bumrah</span>
+                                <span class="playerPrice">120000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Shami</span>
+                                <span class="playerPrice">90000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Bhuvneshwar</span>
+                                <span class="playerPrice">80000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wicketKeeper" id="team1WicketKeeper">
+                        <h3>Wicket Keepers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Dhoni</span>
+                                <span class="playerPrice">120000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="team-container">
+            <div class="teamInfo" id="team-2">
+                <div class="teamName" id="team2Name">
+                    <h2>Team 2</h2>
+                    <div class="teamFunds" id="team2Fund">
+                        <h2>888888 Rs</h2>
+                    </div>
+                </div>
+                <div class="Players">
+                    <div class="batsman" id="team2Batsman">
+                        <h3>Batsman</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Kohli</span>
+                                <span class="playerPrice">90000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Rahul</span>
+                                <span class="playerPrice">75000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Iyer</span>
+                                <span class="playerPrice">70000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bowlers" id="team2Bowlers">
+                        <h3>Bowlers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Bumrah</span>
+                                <span class="playerPrice">110000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Chahal</span>
+                                <span class="playerPrice">85000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Shardul</span>
+                                <span class="playerPrice">75000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wicketKeeper" id="team2WicketKeeper">
+                        <h3>Wicket Keepers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Pant</span>
+                                <span class="playerPrice">100000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-container">
+            <div class="teamInfo" id="team-3">
+                <div class="teamName" id="team3Name">
+                    <h2>Team 3</h2>
+                    <div class="teamFunds" id="team3Fund">
+                        <h2>777777 Rs</h2>
+                    </div>
+                </div>
+                <div class="Players">
+                    <div class="batsman" id="team3Batsman">
+                        <h3>Batsman</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Guptill</span>
+                                <span class="playerPrice">80000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Warner</span>
+                                <span class="playerPrice">70000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Williamson</span>
+                                <span class="playerPrice">65000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bowlers" id="team3Bowlers">
+                        <h3>Bowlers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Starc</span>
+                                <span class="playerPrice">105000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Boult</span>
+                                <span class="playerPrice">80000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Ferguson</span>
+                                <span class="playerPrice">70000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wicketKeeper" id="team3WicketKeeper">
+                        <h3>Wicket Keepers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Bairstow</span>
+                                <span class="playerPrice">95000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-container">
+            <div class="teamInfo" id="team-4">
+                <div class="teamName" id="team4Name">
+                    <h2>Team 4</h2>
+                    <div class="teamFunds" id="team4Fund">
+                        <h2>666666 Rs</h2>
+                    </div>
+                </div>
+                <div class="Players">
+                    <div class="batsman" id="team4Batsman">
+                        <h3>Batsman</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Smith</span>
+                                <span class="playerPrice">85000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Maxwell</span>
+                                <span class="playerPrice">75000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Labuschagne</span>
+                                <span class="playerPrice">70000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bowlers" id="team4Bowlers">
+                        <h3>Bowlers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Cummins</span>
+                                <span class="playerPrice">100000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Hazlewood</span>
+                                <span class="playerPrice">80000 Rs</span>
+                            </li>
+                            <li class="player">
+                                <span class="playerName">Zampa</span>
+                                <span class="playerPrice">70000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wicketKeeper" id="team4WicketKeeper">
+                        <h3>Wicket Keepers</h3>
+                        <ul>
+                            <li class="player">
+                                <span class="playerName">Carey</span>
+                                <span class="playerPrice">90000 Rs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
