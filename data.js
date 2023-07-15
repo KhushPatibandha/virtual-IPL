@@ -19,46 +19,46 @@ const teamData = [
             { playerName: "Khush", playerPrice: "100000 Rs" }
         ]
     }, 
-    // {
-    //     teamName: "Team 2",
-    //     teamFunds: "10000000 Rs",
-    //     batsmen: [
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     bowlers: [
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     wicketKeepers: [
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     allRounders: [
-    //         { playerName: "", playerPrice: "" }
-    //     ]
-    // },
-    // {
-    //     teamName: "Team 3",
-    //     teamFunds: "10000000 Rs",
-    //     batsmen: [
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     bowlers: [
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" },
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     wicketKeepers: [
-    //         { playerName: "", playerPrice: "" }
-    //     ],
-    //     allRounders: [
-    //         { playerName: "", playerPrice: "" }
-    //     ]
-    // },
+    {
+        teamName: "Team 2",
+        teamFunds: "10000000 Rs",
+        batsmen: [
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" }
+        ],
+        bowlers: [
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" }
+        ],
+        wicketKeepers: [
+            { playerName: "", playerPrice: "" }
+        ],
+        allRounders: [
+            { playerName: "", playerPrice: "" }
+        ]
+    },
+    {
+        teamName: "Team 3",
+        teamFunds: "10000000 Rs",
+        batsmen: [
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" }
+        ],
+        bowlers: [
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" },
+            { playerName: "", playerPrice: "" }
+        ],
+        wicketKeepers: [
+            { playerName: "", playerPrice: "" }
+        ],
+        allRounders: [
+            { playerName: "", playerPrice: "" }
+        ]
+    },
     // {
     //     teamName: "Team 4",
     //     teamFunds: "10000000 Rs",
