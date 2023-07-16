@@ -13,42 +13,42 @@ const teamData = [
             { playerName: "", playerPrice: "" }
         ],
         wicketKeepers: [
-            { playerName: "Harsh", playerPrice: "200000 Rs" }
+            { playerName: "Dhoni", playerPrice: "200000 Rs" }
         ],
         allRounders: [
-            { playerName: "Khush", playerPrice: "100000 Rs" }
+            { playerName: "jadeja", playerPrice: "100000 Rs" }
         ]
     }, 
     {
         teamName: "Team 2",
         teamFunds: "10000000 Rs",
         batsmen: [
-            { playerName: "", playerPrice: "" },
-            { playerName: "", playerPrice: "" },
-            { playerName: "", playerPrice: "" }
+            { playerName: "Alt Dhoni", playerPrice: "100000 Rs" },
+            { playerName: "Thala Dhoni", playerPrice: "200000 Rs" },
+            { playerName: "king Dhoni", playerPrice: "10099 Rs" }
         ],
         bowlers: [
-            { playerName: "", playerPrice: "" },
+            { playerName: "bumrah aja yar", playerPrice: "9911 Rs" },
             { playerName: "", playerPrice: "" },
             { playerName: "", playerPrice: "" }
         ],
         wicketKeepers: [
-            { playerName: "", playerPrice: "" }
+            { playerName: "rohit", playerPrice: "91011 Rs" }
         ],
         allRounders: [
-            { playerName: "", playerPrice: "" }
+            { playerName: "panth", playerPrice: "31313 Rs" }
         ]
     },
     {
         teamName: "Team 3",
         teamFunds: "10000000 Rs",
         batsmen: [
-            { playerName: "", playerPrice: "" },
+            { playerName: "hardik", playerPrice: "13131 Rs" },
             { playerName: "", playerPrice: "" },
             { playerName: "", playerPrice: "" }
         ],
         bowlers: [
-            { playerName: "", playerPrice: "" },
+            { playerName: "siraj", playerPrice: "1414414 Rs" },
             { playerName: "", playerPrice: "" },
             { playerName: "", playerPrice: "" }
         ],
