@@ -3,7 +3,7 @@
       "teamName": "Team 1",
       "teamFunds": "10000000 Rs",
       "batsmen": [
-        { "playerName": "Dhoni", "playerPrice": "10000000 Rs" },
+        { "playerName": "AARON FINCH", "playerPrice": "10000000 Rs" },
         { "playerName": "Virat", "playerPrice": "41444 Rs" },
         { "playerName": "", "playerPrice": "" }
       ],

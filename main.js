@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamGroupElement = document.querySelector('.team-group');
     let teamData;
+    let playerData;
   
     function renderTeam() {
         teamGroupElement.innerHTML = '';
@@ -85,6 +86,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
+    function renderPlayerDeck(players) {
+        const playerDeckElement = document.querySelector('.playerDeck');
+        playerDeckElement.innerHTML = '';
+
+        players.forEach(player => {
+            const playerCard = document.createElement('div');
+            playerCard.classList.add('playerCard');
+
+            playerCard.innerHTML = `
+                <h3>${player.name}</h3>
+                <p>Status: ${player.status}</p>
+                <p>Category: ${player.category}</p>
+                <p>Player Team: ${player.playerTeam}</p>
+                <p>Player Price: ${player.playerPrice}</p>
+            `;
+
+            playerDeckElement.appendChild(playerCard);
+        });
+    }
+
+
     function parsePrice(price) {
         const parsedPrice = parseInt(price);
         return isNaN(parsedPrice) ? 0 : parsedPrice;
@@ -107,4 +130,30 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => {
         console.error('Error fetching data:', error);
     });
+
+    fetch('/playerData.json') // Fetch player data from playerData.json
+    .then(response => response.json())
+    .then(data => {
+        playerData = data;
+        renderPlayerDeck(playerData); // Render the initial player data on the webpage
+
+        const socket = io();
+
+        socket.on('player-update', updatedPlayerData => {
+            playerData = updatedPlayerData;
+            renderPlayerDeck(playerData);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching player data:', error);
+    });
+
+    // Add event listener for player search
+    const playerSearchInput = document.getElementById('playerSearch');
+    playerSearchInput.addEventListener('input', () => {
+        const searchTerm = playerSearchInput.value.trim().toLowerCase();
+        const filteredPlayers = playerData.filter(player => player.name.toLowerCase().includes(searchTerm));
+        renderPlayerDeck(filteredPlayers);
+    });
+
 });
