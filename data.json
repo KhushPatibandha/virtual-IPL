@@ -3,52 +3,52 @@
       "teamName": "Team 1",
       "teamFunds": "10000000 Rs",
       "batsmen": [
-        { "playerName": "AARON FINCH", "playerPrice": "10000000 Rs" },
-        { "playerName": "Virat", "playerPrice": "41444 Rs" },
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" },
         { "playerName": "", "playerPrice": "" }
       ],
       "bowlers": [
-        { "playerName": "bumrah", "playerPrice": "141 Rs" },
-        { "playerName": "oubuobo", "playerPrice": "12121 Rs" },
-        { "playerName": "fasas", "playerPrice": "413" }
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" }
       ],
       "wicketKeepers": [
-        { "playerName": "Dhoni", "playerPrice": "200000 Rs" }
+        { "playerName": "", "playerPrice": "" }
       ],
       "allRounders": [
-        { "playerName": "jadeja", "playerPrice": "100000 Rs" }
+        { "playerName": "", "playerPrice": "" }
       ]
     },
     {
       "teamName": "Team 2",
       "teamFunds": "10000000 Rs",
       "batsmen": [
-        { "playerName": "Alt Dhoni", "playerPrice": "100000 Rs" },
-        { "playerName": "Thala Dhoni", "playerPrice": "200000 Rs" },
-        { "playerName": "king Dhoni", "playerPrice": "10099 Rs" }
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" }
       ],
       "bowlers": [
-        { "playerName": "bumrah aja yar", "playerPrice": "9911 Rs" },
-        { "playerName": "assasa", "playerPrice": "1281281 Rs" },
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" },
         { "playerName": "", "playerPrice": "" }
       ],
       "wicketKeepers": [
-        { "playerName": "rohit", "playerPrice": "91011 Rs" }
+        { "playerName": "", "playerPrice": "" }
       ],
       "allRounders": [
-        { "playerName": "panth", "playerPrice": "31313 Rs" }
+        { "playerName": "", "playerPrice": "" }
       ]
     },
     {
       "teamName": "Team 3",
       "teamFunds": "10000000 Rs",
       "batsmen": [
-        { "playerName": "hardik", "playerPrice": "13131 Rs" },
-        { "playerName": "bbfj", "playerPrice": "90909 Rs" },
+        { "playerName": "", "playerPrice": "" },
+        { "playerName": "", "playerPrice": "" },
         { "playerName": "", "playerPrice": "" }
       ],
       "bowlers": [
-        { "playerName": "siraj", "playerPrice": "1414414 Rs" },
+        { "playerName": "", "playerPrice": "" },
         { "playerName": "", "playerPrice": "" },
         { "playerName": "", "playerPrice": "" }
       ],
